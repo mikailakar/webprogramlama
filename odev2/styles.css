@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 200px;
+}
+
+.navbar {
+  background-color: #333;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  animation: fadeInDown 0.5s;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #aaa;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+#home {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f2f2f2;
+}
+
+#home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#about {
+  text-align: center;
+  padding: 100px 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#projects {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f2f2f2;
+}
+
+#projects h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#contact {
+  text-align: center;
+  padding: 100px 0;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section {
+  margin-top: -200px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.srv{
+  padding-right: 10px;
+  margin-bottom: -10px;
+}
